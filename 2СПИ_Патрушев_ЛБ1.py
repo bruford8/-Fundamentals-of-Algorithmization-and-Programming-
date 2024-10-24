@@ -1,3 +1,5 @@
+def main():
+
 # Задание 1
 
 name_film = input("Введите название фильма")
@@ -36,5 +38,16 @@ print(word[(len(word)-1)//2])
 # Задание 6
 
 feedback = 'Алиса и Вася, большое спасибо за теплый приём!'
-name1 = feedback[0:5]name2 = feedback[8:12]
-print("Назначить премию:", name1 + '/' + name2)
+name1 = feedback[0:5]
+name2 = feedback[8:12]
+print('Назначить премию:', name1 + '/' + name2)
+
+# Задание 7
+
+while True:
+    n = int(input('n = ') )
+    s = ' '
+    for i in range(n-1, n+3):
+        s += chr(ord('A') + i % 26)
+        print(s)
+
